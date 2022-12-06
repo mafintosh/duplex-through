@@ -32,7 +32,7 @@ class DuplexPair extends Duplex {
     }
   }
 
-  _final (data, cb) {
+  _final (cb) {
     this.other.push(null)
     cb(null)
   }
