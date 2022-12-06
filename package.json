@@ -6,6 +6,12 @@
   "dependencies": {
     "streamx": "^2.12.5"
   },
+  "devDependencies": {
+    "standard": "^17.0.0"
+  },
+  "scripts": {
+    "test": "standard"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mafintosh/duplex-pair.git"
