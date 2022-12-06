@@ -1,6 +1,6 @@
 {
   "name": "duplex-through",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Make two Duplex streamx streams that are passing through to each other",
   "main": "index.js",
   "dependencies": {
