@@ -1,0 +1,19 @@
+{
+  "name": "duplex-pair",
+  "version": "0.0.0",
+  "description": "Make two Duplex streamx streams that are paired",
+  "main": "index.js",
+  "dependencies": {
+    "streamx": "^2.12.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/duplex-pair.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/duplex-pair/issues"
+  },
+  "homepage": "https://github.com/mafintosh/duplex-pair"
+}
