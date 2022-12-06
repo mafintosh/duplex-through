@@ -1,11 +1,11 @@
-# duplex-pair
+# duplex-through
 
-Make two Duplex streamx streams that are paired.
+Make two Duplex streamx streams that are passing through to each other.
 
 Write to one, it push data to the other one.
 
 ```
-npm install duplex-pair
+npm install duplex-through
 ```
 
 Useful for testing server/client flows
@@ -13,9 +13,9 @@ Useful for testing server/client flows
 ## Usage
 
 ``` js
-const duplexPair = require('duplex-pair')
+const duplexThrough = require('duplex-through')
 
-const [a, b] = duplexPair()
+const [a, b] = duplexThrough()
 
 a.write('hello')
 b.on('data', function (data) {

@@ -14,6 +14,11 @@ class DuplexPair extends Duplex {
     this.other.destroy(new Error('Pair was destroyed'))
   }
 
+  _read (cb) {
+    this.other._continue(null)
+    cb(null)
+  }
+
   _continue (err) {
     const cb = this._oncontinue
     this._oncontinue = null
@@ -35,7 +40,7 @@ class DuplexPair extends Duplex {
   }
 }
 
-module.exports = function (opts) {
+module.exports = function duplexThrough (opts) {
   const a = new DuplexPair(opts)
   const b = new DuplexPair(opts)
 

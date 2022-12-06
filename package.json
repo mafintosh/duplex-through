@@ -1,5 +1,5 @@
 {
-  "name": "duplex-pair",
+  "name": "duplex-through",
   "version": "0.0.0",
   "description": "Make two Duplex streamx streams that are paired",
   "main": "index.js",
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mafintosh/duplex-pair.git"
+    "url": "https://github.com/mafintosh/duplex-through.git"
   },
   "author": "Mathias Buus (@mafintosh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mafintosh/duplex-pair/issues"
+    "url": "https://github.com/mafintosh/duplex-through/issues"
   },
-  "homepage": "https://github.com/mafintosh/duplex-pair"
+  "homepage": "https://github.com/mafintosh/duplex-through"
 }
