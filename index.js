@@ -6,7 +6,6 @@ class DuplexPair extends Duplex {
 
     this.other = null
     this._oncontinue = null
-    this._ended = false
   }
 
   _predestroy () {
@@ -34,7 +33,6 @@ class DuplexPair extends Duplex {
   }
 
   _final (data, cb) {
-    this._ended = true
     this.other.push(null)
     cb(null)
   }
