@@ -10,7 +10,10 @@ class DuplexPair extends Duplex {
 
   _predestroy () {
     this._continue(new Error('Destroyed'))
-    this.other.destroy(new Error('Pair was destroyed'))
+
+    process.nextTick(() => {
+      this.other.destroy(this.other._readableState.error || this.other._writableState.error)
+    })
   }
 
   _read (cb) {
